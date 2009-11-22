@@ -12,13 +12,28 @@
 		    padding: 80px;
 		  }
 		  .swift .wrapper {
-		    padding: 5px 10px;
+		    padding: 8px 8px 8px 15px;
 		    font: 12px "Lucida Grande";
 		    background: rgba(0,0,0,0.75);
+		    text-shadow: 1px 1px 1px #2C2C2C;
 		    color: #fff;
-		    text-shadow: 1px 1px 1px #000;
 		    -webkit-border-radius: 4px;
 		    -moz-border-radius: 4px;
+		  }
+		  .swift input {
+		    background: rgba(255, 255, 255, 0.3); 
+		    border: 1px solid rgba(255, 255, 255, 0.2);
+		    color: #fff;
+		    -webkit-border-radius: 4px;
+		    -moz-border-radius: 4px;
+		  }
+		  .swift input:hover {
+		    background: rgba(255, 255, 255, 0.5); 
+		    cursor: pointer;
+		  }
+		  .swift input:active {
+		    background: rgba(255, 255, 255, 0.2);
+		    color: #c7c7c7; 
 		  }
 		  .swift.east {
 		    padding-left: 6px;
@@ -28,6 +43,18 @@
 	</head>
 	<body>
     <input type="button" value="Delete" />
-    <span class="swift east"><span class="wrapper">Delete this item?</span></span>
+    
+    <br />
+    <br />
+    <br />
+    <span class="swift east">
+      <span class="wrapper">
+        <span class="title">Delete this item?</span>
+        <span class="body">
+          <input type="button" value="Delete" />
+          <input type="button" value="Cancel" />
+        </div>
+      </span>
+    </span>
 	</body>
 </html>
