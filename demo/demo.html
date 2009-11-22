@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script src="../lib/jquery.swift.js"></script>
+		<script>
+      $(function(){
+        $('input[value=Delete]').swift('Delete this item?')
+      })
+		</script>
+		<style type="text/css" media="screen">
+		  body {
+		    padding: 80px;
+		  }
+		  .swift .wrapper {
+		    padding: 5px 10px;
+		    font: 12px "Lucida Grande";
+		    background: rgba(0,0,0,0.75);
+		    color: #fff;
+		    text-shadow: 1px 1px 1px #000;
+		    -webkit-border-radius: 4px;
+		    -moz-border-radius: 4px;
+		  }
+		  .swift.east {
+		    padding-left: 6px;
+		    background: url(images/arrow.gif) 0 50% no-repeat;
+		  }
+		</style>
+	</head>
+	<body>
+    <input type="button" value="Delete" />
+    <span class="swift east"><span class="wrapper">Delete this item?</span></span>
+	</body>
+</html>
