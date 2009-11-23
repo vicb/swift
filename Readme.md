@@ -1,19 +1,20 @@
 
-= YourLib
+# Swift
 
-Description
+Swift is a tiny jQuery plugin for displaying inline context-based 
+dialog boxes ranging from prompts to confirmations for an ultra-sexy
+user interface.
 
-==
+## Todo
 
-  custom jquery events
-  autofocus option / default
-  default when pressing enter option / default
+ * autofocus on an input (option / default)
+ * default enter value (option / default)
 
-== License 
+## License 
 
 (The MIT License)
 
-Copyright (c) 2009 Your Name <Your Email>
+Copyright (c) 2009 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
