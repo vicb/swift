@@ -9,6 +9,10 @@ user interface.
 
  * autofocus on an input (option / default)
  * default enter value (option / default)
+ 
+## Documentation
+
+  * View the [Swift Documentation](http://visionmedia.github.com/swift)
 
 ## License 
 
