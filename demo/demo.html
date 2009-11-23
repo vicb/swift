@@ -4,14 +4,33 @@
 		<script src="../lib/jquery.swift.js"></script>
 		<script>
       $(function(){
-        $('input[value=Delete]').click(function(){
+        $('input[value=Add Item]').click(function() {
+          $(this).swift('Item:', {
+            body: '<input type="text"/>',
+            buttons: {
+              add: { 
+                label: 'Add',
+                action: function(){
+                  var val = this.find(':text').val()
+                  if (!val) return this.find(':text').css('border-color', 'red'), false
+                  else $('<li/>').text(val).append('<a href="#">x</a>').appendTo('ul')
+                }
+              },
+              cancel: {
+                label: 'Cancel',
+                action: function(){}
+              }
+            }
+          })
+        })
+        
+        $('ul li a').live('click', function(){
           $(this).swift('Delete this item?', {
             buttons: {
               'delete': {
                 label: 'Delete',
                 action: function(e) {
-                  console.log('delete called');
-                  return false
+                  e.target.parents('li').fadeOut()
                 }
               },
               'cancel': {
@@ -28,6 +47,15 @@
 		<style type="text/css" media="screen">
 		  body {
 		    padding: 80px;
+		  }
+		  ul {
+		    margin: 0;
+		    padding: 0;
+		    list-style: none;
+		  }
+		  ul li a {
+		    padding: 0 5px;
+		    text-decoration: none;
 		  }
 		  .swift {
 		    margin-left: 20px;
@@ -64,9 +92,10 @@
 		</style>
 	</head>
 	<body>
-    <input type="button" value="Delete" />
+	  <ul></ul>
+    <input type="button" value="Add Item" />
     
-    <br />
+    <!-- <br />
     <br />
     <br />
     <span class="swift east">
@@ -90,7 +119,7 @@
           <input type="button" value="Add" />
         </span>
       </span>
-    </span>
+    </span> -->
         
 	</body>
 </html>
