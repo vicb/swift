@@ -5,6 +5,7 @@ Description
 
 ==
 
+  custom jquery events
   autofocus option / default
   default when pressing enter option / default
 

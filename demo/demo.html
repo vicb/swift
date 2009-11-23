@@ -22,6 +22,7 @@
               }
             }
           })
+          return false
         })
         
         $('ul li a').live('click', function(){
@@ -43,13 +44,26 @@
               }
             }
           })
+          return false
         })
       })
 		</script>
 		<style type="text/css" media="screen">
 		  body {
-		    font: 12px "Lucida Grande";
+		    font: 12px "Lucida Grande", "Arial";
 		    padding: 80px;
+		  }
+		  h1, h2 {
+		    font-size: 30px;
+		    color: red;
+		  }
+		  h2 {
+		    margin-top: 40px;
+		    font-size: 25px;
+		  }
+		  p {
+		    width: 40%;
+		    line-height: 1.8;
 		  }
 		  ul {
 		    margin: 5px 0;
@@ -69,6 +83,12 @@
 		    text-decoration: none;
 		    color: red;
 		  }
+		  code {
+		    white-space: pre;
+		  }
+		  
+		  /* Swift */
+		  
 		  .swift {
 		    margin-left: 20px;
 		  }
@@ -104,14 +124,32 @@
 		    padding-left: 6px;
 		    background: url(images/arrow.gif) 0 50% no-repeat;
 		  }
+		  
 		</style>
 	</head>
 	<body>
+	  <h1>Swift</h1>
+	  <p>Swift is a tiny jQuery plugin which allows elegant, and user friendly inline dialogs for confirmations, prompts and more. Click "Add item" or one of the "x" links below to see it in action.</p>
+	  
+	  <h2>Demo</h2>
 	  <ul>
 	    <li>foo<a href="#">x</a></li>
 	    <li>bar<a href="#">x</a></li>
+	    <li>baz<a href="#">x</a></li>
 	  </ul>
     <input type="button" value="Add Item" />
+    
+    <h2>Demo Source</h2>
+    <script src="http://gist.github.com/241262.js?file=swift.js"></script>
+    
+    <h2>Stylesheet</h2>
+    <script src="http://gist.github.com/241266.js?file=swift.css"></script>
+    
+    <h2>Information</h2>
+    <ol>
+      <li>View the <a href="http://github.com/visionmedia/swift">source</a></li>
+      <li>Submit an <a href="http://github.com/visionmedia/swift/issue">issue</li>
+    </ol>
     
     <!-- <br />
     <br />
