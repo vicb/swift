@@ -5,11 +5,6 @@ Swift is a tiny jQuery plugin for displaying inline context-based
 dialog boxes ranging from prompts to confirmations for an ultra-sexy
 user interface.
 
-## Todo
-
- * autofocus on an input (option / default)
- * default enter value (option / default)
- 
 ## Documentation
 
   * View the [Swift Documentation](http://visionmedia.github.com/swift)
