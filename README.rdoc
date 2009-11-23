@@ -3,6 +3,11 @@
 
 Description
 
+==
+
+  autofocus option / default
+  default when pressing enter option / default
+
 == License 
 
 (The MIT License)
