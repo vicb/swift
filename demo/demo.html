@@ -4,15 +4,37 @@
 		<script src="../lib/jquery.swift.js"></script>
 		<script>
       $(function(){
-        $('input[value=Delete]').swift('Delete this item?')
+        $('input[value=Delete]').click(function(){
+          $(this).swift('Delete this item?', {
+            buttons: {
+              'delete': {
+                label: 'Delete',
+                action: function(e) {
+                  console.log(e);
+                  console.log('delete called');
+                }
+              },
+              'cancel': {
+                label: 'Cancel',
+                action: function(e) {
+                  console.log(e);
+                  console.log('cancel called');
+                }
+              }
+            }
+          })
+        })
       })
 		</script>
 		<style type="text/css" media="screen">
 		  body {
 		    padding: 80px;
 		  }
+		  .swift {
+		    margin-left: 20px;
+		  }
 		  .swift .wrapper {
-		    padding: 8px 8px 8px 15px;
+		    padding: 8px 5px 8px 15px;
 		    font: 12px "Lucida Grande";
 		    background: rgba(0,0,0,0.75);
 		    text-shadow: 1px 1px 1px #2C2C2C;
@@ -23,6 +45,7 @@
 		  .swift input {
 		    background: rgba(255, 255, 255, 0.3); 
 		    border: 1px solid rgba(255, 255, 255, 0.2);
+		    outline: none;
 		    color: #fff;
 		    -webkit-border-radius: 4px;
 		    -moz-border-radius: 4px;
@@ -53,8 +76,22 @@
         <span class="body">
           <input type="button" value="Delete" />
           <input type="button" value="Cancel" />
-        </div>
+        </span>
       </span>
     </span>
+    
+    <br />
+    <br />
+    <br />    
+    <span class="swift east">
+      <span class="wrapper">
+        <span class="title">Add an item:</span>
+        <span class="body">
+          <input type="text" />
+          <input type="button" value="Add" />
+        </span>
+      </span>
+    </span>
+        
 	</body>
 </html>
