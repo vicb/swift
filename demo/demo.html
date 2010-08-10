@@ -38,7 +38,7 @@
               'cancel': {
                 label: 'Cancel',
                 action: function(e) {
-                  console.log('cancel called');
+                  if (typeof console !== 'undefined') { console.log('cancel called'); }
                 }
               }
             }
